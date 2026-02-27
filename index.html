@@ -89,6 +89,8 @@
 
     .card-link:hover { color: var(--text); border-color: var(--muted); }
 
+    .card-links { display: flex; gap: 6px; }
+
     .card p {
       color: var(--muted);
       font-size: 0.88rem;
@@ -124,7 +126,10 @@
     <div class="card">
       <div class="card-header">
         <h2>Aether</h2>
-        <a class="card-link" href="https://github.com/bartalor/Aether" target="_blank" rel="noopener">View →</a>
+        <div class="card-links">
+          <a class="card-link" href="https://bartalor.github.io/Aether" target="_blank" rel="noopener">Docs</a>
+          <a class="card-link" href="https://github.com/bartalor/Aether" target="_blank" rel="noopener">View →</a>
+        </div>
       </div>
       <p>High-speed local pub/sub message broker using shared memory for zero-copy messaging. No network stack overhead — near-memory speed.</p>
       <span class="lang">C++</span>
@@ -133,7 +138,10 @@
     <div class="card">
       <div class="card-header">
         <h2>infer.cpp</h2>
-        <a class="card-link" href="https://github.com/bartalor/infer.cpp" target="_blank" rel="noopener">View →</a>
+        <div class="card-links">
+          <a class="card-link" href="https://bartalor.github.io/infer.cpp" target="_blank" rel="noopener">Docs</a>
+          <a class="card-link" href="https://github.com/bartalor/infer.cpp" target="_blank" rel="noopener">View →</a>
+        </div>
       </div>
       <p>From-scratch neural network inference engine in C++. Targets GPT-2 small with zero ML framework dependencies.</p>
       <span class="lang">C++</span>
@@ -142,7 +150,10 @@
     <div class="card">
       <div class="card-header">
         <h2>DocMind</h2>
-        <a class="card-link" href="https://github.com/bartalor/DocMind" target="_blank" rel="noopener">View →</a>
+        <div class="card-links">
+          <a class="card-link" href="https://bartalor.github.io/DocMind" target="_blank" rel="noopener">Docs</a>
+          <a class="card-link" href="https://github.com/bartalor/DocMind" target="_blank" rel="noopener">View →</a>
+        </div>
       </div>
       <p>AI-powered knowledge assistant — upload documents and have LLM-powered conversations with them. Built on FAISS and Claude.</p>
       <span class="lang">Python</span>
