@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bartalor</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #1a1a1a;
+      --surface: #242424;
+      --border: #333;
+      --text: #e0e0e0;
+      --muted: #888;
+      --accent: #7c6af7;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 24px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .hero a:hover { text-decoration: underline; }
+
+    .projects {
+      width: 100%;
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: var(--accent); }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card h2 { font-size: 1.05rem; font-weight: 600; }
+
+    .card-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 3px 8px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .card-link:hover { color: var(--text); border-color: var(--muted); }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .lang {
+      font-size: 0.75rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      align-self: flex-start;
+    }
+
+    footer {
+      margin-top: 80px;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>bartalor</h1>
+    <a href="https://github.com/bartalor" target="_blank" rel="noopener">github.com/bartalor</a>
+  </header>
+
+  <main class="projects">
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Aether</h2>
+        <a class="card-link" href="https://github.com/bartalor/Aether" target="_blank" rel="noopener">View →</a>
+      </div>
+      <p>High-speed local pub/sub message broker using shared memory for zero-copy messaging. No network stack overhead — near-memory speed.</p>
+      <span class="lang">C++</span>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>infer.cpp</h2>
+        <a class="card-link" href="https://github.com/bartalor/infer.cpp" target="_blank" rel="noopener">View →</a>
+      </div>
+      <p>From-scratch neural network inference engine in C++. Targets GPT-2 small with zero ML framework dependencies.</p>
+      <span class="lang">C++</span>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>DocMind</h2>
+        <a class="card-link" href="https://github.com/bartalor/DocMind" target="_blank" rel="noopener">View →</a>
+      </div>
+      <p>AI-powered knowledge assistant — upload documents and have LLM-powered conversations with them. Built on FAISS and Claude.</p>
+      <span class="lang">Python</span>
+    </div>
+
+  </main>
+
+  <footer>built by bartalor</footer>
+
+</body>
+</html>
